@@ -19,4 +19,5 @@ class Student < ActiveRecord::Base
         return student
       end
     end
+  end
 end
