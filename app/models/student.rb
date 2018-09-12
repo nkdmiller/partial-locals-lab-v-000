@@ -14,10 +14,12 @@ class Student < ActiveRecord::Base
   has_many :classroom_students
   has_many :classrooms, through: :classroom_students
   def self.search(name)
+    matches = []
     Student.all.each do |student|
       if student == name
-        return student
+        matches << student
       end
     end
   end
+  matches
 end
