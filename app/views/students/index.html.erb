@@ -1,4 +1,5 @@
 <%if @matches%>
-<%@matches.each do |student|%>
-<%= render partial: 'student', locals: {student: student}  %>
+  <%@matches.each do |student|%>
+    <%= render partial: 'student', locals: {student: student}  %>
+  <%end%>
 <%end%>
