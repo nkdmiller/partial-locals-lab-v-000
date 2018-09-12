@@ -20,6 +20,6 @@ class Student < ActiveRecord::Base
         matches << student
       end
     end
+    matches
   end
-  matches
 end
