@@ -16,7 +16,7 @@ class Student < ActiveRecord::Base
   def self.search(search)
     matches = []
     Student.all.each do |student|
-      if student.name.include?(search)
+      if student.name.downcase.include?(search.downcase)
         matches << student
       end
     end
