@@ -3,6 +3,6 @@
     <%= render partial: 'student', locals: {student: student}  %>
   <%end%>
 <%end%>
-<%form_tag('/students')%>
+<%form_tag(students_path)%>
 <%text_field_tag :search%>
 <%submit_tag%>
